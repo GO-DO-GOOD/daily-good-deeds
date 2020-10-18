@@ -1,11 +1,12 @@
-name: Build "Daily Good Deeds"
+name: Build and Deploy "Daily Good Deeds"
 
 on:
-  - push
-  - pull_request
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,3 +19,8 @@ jobs:
             - recursive: true
       
       - run: pnpm build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          FOLDER: dist # The folder the action should deploy.
