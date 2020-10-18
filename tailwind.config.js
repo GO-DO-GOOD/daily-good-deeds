@@ -9,6 +9,26 @@ module.exports = {
       './src/**/*.js',
       './src/**/*.ts',
     ],
+    options: {
+      whitelist: [
+        'bg-circle-1',
+        'bg-circle-2',
+        'bg-circle-3',
+        'bg-circle-4',
+        'bg-circle-5',
+        'bg-circle-6',
+        'bg-circle-7',
+        'bg-circle-8',
+        'bg-circle-9',
+        'bg-circle-10',
+        'bg-circle-11',
+        'bg-circle-12',
+        'bg-circle-13',
+        'bg-circle-14',
+        'bg-circle-15',
+        'bg-circle-16',
+      ],
+    },
   },
   theme: {
     extend: {
