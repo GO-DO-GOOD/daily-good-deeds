@@ -1,5 +1,5 @@
 <template>
-  <div :class="background" class="h-full text-white">
+  <div :class="background" class="min-h-screen w-full text-white">
     <div class="flex flex-col flex-initial">
       <div class="flex justify-center">
         <div class="p-4 m-2">
@@ -8,9 +8,9 @@
       </div>
 
       <div
-        class="flex flex-col justify-center justify-self-stretch items-center text-center text-6xl font-bold"
+        class="flex flex-col justify-center justify-self-stretch items-center text-center text-2xl xl:text-6xl font-bold"
       >
-        <div class="p-24 my-2 mx-24">
+        <div class="p-8 xl:p-24 my-2 mx-8 xl:mx-96">
           VERSUCHE WENIGER PLASTIK ZU KONSUMIEREN UND SUCHE NACH PASSENDEN WEGEN,
           DIE ZU DIR PASSEN.
         </div>
