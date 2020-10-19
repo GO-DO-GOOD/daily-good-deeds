@@ -16,23 +16,23 @@
         </div>
 
         <div class="pb-16 mb-16">
-          <Icon icon="mdi:arrow-down-bold-circle" @click="toggle()" />
+          <Icon class="text-7xl" icon="mdi:arrow-down-bold-circle" @click="toggle()" />
         </div>
       </div>
 
       <footer class="flex flex-col justify-center text-center items-center">
         <div class="">
-          DEINE TÄGLICHE GUTE TAT FÜR THE GOOD CHALLENGE IM NOVEMBE 2020
+          DEINE TÄGLICHE GUTE TAT FÜR THE GOOD CHALLENGE IM NOVEMBER 2020 - Mach mit & lass dich inspirieren !
         </div>
         <div class="flex flex-row text-3xl">
           <a href="https://www.facebook.com/GoDoGood2020/" target="_blank">
             <Icon class="m-4" icon="mdi:facebook" />
           </a>
-          <a href="hhttps://www.instagram.com/godogood2020/" target="_blank">
-            <Icon class="m-4" icon="mdi:instagram" />
+          <a href="https://www.instagram.com/godogood2020/" target="_blank">
+            <Icon class="m-4" icon="entypo-social:instagram-with-circle" />
           </a>
           <a href="mailto:godo.good?subject=Hab%20eine%20Idee">
-            <Icon class="m-4" icon="mdi:email" />
+            <Icon class="m-4" icon="icomoon-free:mail4" />
           </a>
         </div>
       </footer>
