@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: {
@@ -39,6 +40,14 @@ module.exports = {
     },
   },
   theme: {
+    fontFamily: {
+      serif: [
+        'Rockness',
+        ...defaultTheme.fontFamily.serif,
+      ],
+      body: ['TeXGyreAdventor-Regular'],
+      display: ['TeXGyreAdventor-Bold'],
+    },
     extend: {
       colors: {
         circle: {

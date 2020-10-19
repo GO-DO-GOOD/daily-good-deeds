@@ -10,7 +10,7 @@
       <div
         class="flex flex-col justify-center justify-self-stretch items-center text-center text-2xl xl:text-6xl font-bold"
       >
-        <div class="p-8 xl:p-24 my-2 mx-8 xl:mx-96">
+        <div class="font-display p-8 lg:p-16 xl:p-24 my-2 mx-8 lg:mx-64 xl:mx-96">
           VERSUCHE WENIGER PLASTIK ZU KONSUMIEREN UND SUCHE NACH PASSENDEN WEGEN,
           DIE ZU DIR PASSEN.
         </div>
@@ -22,7 +22,7 @@
 
       <footer class="flex flex-col justify-center text-center items-center">
         <div class="">
-          DEINE TÄGLICHE GUTE TAT FÜR THE GOOD CHALLENGE IM NOVEMBER 2020 - Mach mit & lass dich inspirieren !
+          DEINE TÄGLICHE GUTE TAT FÜR THE GOOD CHALLENGE IM NOVEMBER 2020 - <span class="font-serif">Mach mit & lass dich inspirieren</span>!
         </div>
         <div class="flex flex-row text-3xl">
           <a href="https://www.facebook.com/GoDoGood2020/" target="_blank">
