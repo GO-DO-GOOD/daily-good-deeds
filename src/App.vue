@@ -26,7 +26,7 @@
         </div>
         <div class="flex flex-row text-3xl">
           <a href="https://www.facebook.com/GoDoGood2020/" target="_blank">
-            <Icon class="m-4" icon="mdi:facebook" />
+            <Icon class="m-4" icon="cib:facebook" />
           </a>
           <a href="https://www.instagram.com/godogood2020/" target="_blank">
             <Icon class="m-4" icon="entypo-social:instagram-with-circle" />
