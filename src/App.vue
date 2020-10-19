@@ -22,7 +22,7 @@
 
       <footer class="flex flex-col justify-center text-center items-center">
         <div class="">
-          DEINE TÄGLICHE GUTE TAT FÜR THE GOOD CHALLENGE IM NOVEMBER 2020 - <span class="font-serif">Mach mit & lass dich inspirieren</span>!
+          <span class="font-body">DEINE TÄGLICHE GUTE TAT FÜR THE GOOD CHALLENGE IM NOVEMBER 2020</span> - <span class="font-serif">Mach mit & lass dich inspirieren</span>!
         </div>
         <div class="flex flex-row text-3xl">
           <a href="https://www.facebook.com/GoDoGood2020/" target="_blank">
