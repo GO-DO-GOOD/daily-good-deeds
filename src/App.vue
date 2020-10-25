@@ -7,30 +7,35 @@
         </div>
       </div>
       <div class="flex justify-center">
-        <div class="p-4 m-2">
-          <button :class="{ 'font-bold': lang === 'de' }" @click="setLang('de')">DE</button>
+        <div class="p-2">
+          <a :class="{ 'font-bold': lang === 'de' }" @click="setLang('de')">DE</a>
           |
-          <button :class="{ 'font-bold': lang === 'en' }" @click="setLang('en')">EN</button>
+          <a :class="{ 'font-bold': lang === 'en' }" @click="setLang('en')">EN</a>
         </div>
       </div>
 
       <div
-        class="flex flex-col justify-center justify-self-stretch items-center text-center text-2xl xl:text-6xl font-bold"
+        class="flex flex-col justify-center justify-self-stretch items-center text-center text-3xl md:text-3xl lg:text-4xl xl:text-6xl font-bold"
       >
-        <div class="uppercase font-display p-8 lg:p-16 xl:p-24 my-2 mx-8 lg:mx-64 xl:mx-96">
-          {{quote}}
+        <div class="uppercase font-display p-4 my-2 mx-4 lg:p-8 lg:mx-40 xl:p-24 xl:mx-56">
+          {{ quote }}
         </div>
 
-        <div class="pb-16 mb-16">
-          <Icon class="text-7xl" icon="mdi:arrow-down-bold-circle" @click="toggle()" />
+        <div class="mt-4 pb-16 mb-16">
+          <a class="text-base font-normal xl:text-xl text-white py-2 px-4 rounded-full border border-white hover:border-transparent" @click="toggle()">
+            {{ more }}
+          </a>
         </div>
       </div>
 
       <footer class="flex flex-col justify-center text-center items-center">
         <div class="">
-          <span class="font-body">DEINE TÄGLICHE GUTE TAT FÜR THE GOOD CHALLENGE IM NOVEMBER 2020</span> - <span class="font-serif">Mach mit und lass dich inspirieren</span>!
+          <span class="font-body">{{ slogan }}</span>
         </div>
-        <div class="flex flex-row text-3xl">
+        <div>
+          <span class="text-2xl tracking-widest font-serif">{{ suffix }}</span>
+        </div>
+        <div class="flex flex-row text-3xl my-4">
           <a href="https://www.facebook.com/GoDoGood2020/" target="_blank">
             <Icon class="m-4" icon="cib:facebook" />
           </a>
@@ -56,6 +61,9 @@ export default {
   setup() {
     const background = ref<string>(`bg-circle-${Math.floor(Math.random() * 16) + 1}`)
     const quote = ref<string>(lang.value === 'de' ? getQuote(de) : getQuote(en))
+    const more = ref<string>(lang.value === 'de' ? 'NOCH EINE, BITTE!' : 'ONE MORE PLEASE!')
+    const slogan = ref<string>(lang.value === 'de' ? 'DEINE TÄGLICHE GUTE TAT FÜR THE GOOD CHALLENGE IM NOVEMBER 2020' : 'YOUR DAILY GOOD DEED FOR THE GOOD CHALLENGE IN NOVEMBER 2020')
+    const suffix = ref<string>(lang.value === 'de' ? 'Mach mit und lass Dich inspirieren!' : 'Join now and get inspired!')
 
     function toggle() {
       background.value = `bg-circle-${Math.floor(Math.random() * 16) + 1}`
@@ -65,6 +73,9 @@ export default {
     function setLang(l: 'de' | 'en') {
       lang.value = l
       quote.value = l === 'de' ? getQuote(de) : getQuote(en)
+      more.value = l === 'de' ? 'NOCH EINE, BITTE!' : 'ONE MORE, PLEASE!'
+      slogan.value = l === 'de' ? 'DEINE TÄGLICHE GUTE TAT FÜR THE GOOD CHALLENGE IM NOVEMBER 2020' : 'YOUR DAILY GOOD DEED FOR THE GOOD CHALLENGE IN NOVEMBER 2020'
+      suffix.value = l === 'de' ? 'Mach mit und lass Dich inspirieren!' : 'Join now and get inspired!'
     }
 
     function getQuote(quotes: Array<string>) {
@@ -77,6 +88,9 @@ export default {
       toggle,
       lang,
       setLang,
+      more,
+      slogan,
+      suffix,
     }
   },
 }
