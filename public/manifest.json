@@ -1,14 +1,12 @@
 {
     "name": "GO DO GOOD",
     "display": "standalone",
-    "start_url": "/",
+    "start_url": "/daily-good-deeds/",
     "short_name": "GODOGOOD",
     "theme_color": "#ffffff",
     "description": "YOUR DAILY GOOD DEED FOR THE GOOD CHALLENGE IN NOVEMBER 2020",
     "orientation": "any",
     "background_color": "#ffffff",
-    "related_applications": [],
-    "prefer_related_applications": false,
     "icons": [
         {
             "src": "manifest-icon-192.png",

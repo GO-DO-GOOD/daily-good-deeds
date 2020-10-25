@@ -3,14 +3,14 @@
     <div class="flex flex-col flex-initial">
       <div class="flex justify-center">
         <div class="p-4 m-2">
-          <img src="/logo-letter.png" class="h-56" />
+          <img src="/logo-letter.png" class="h-56" alt="GO DO GOOD Logo" />
         </div>
       </div>
       <div class="flex justify-center">
         <div class="p-2">
-          <a :class="{ 'font-bold': lang === 'de' }" @click="setLang('de')">DE</a>
+          <a rel="noopener" :class="{ 'font-bold': lang === 'de' }" @click="setLang('de')">DE</a>
           |
-          <a :class="{ 'font-bold': lang === 'en' }" @click="setLang('en')">EN</a>
+          <a rel="noopener" :class="{ 'font-bold': lang === 'en' }" @click="setLang('en')">EN</a>
         </div>
       </div>
 
