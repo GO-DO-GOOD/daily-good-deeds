@@ -17,7 +17,7 @@
       <div
         class="flex flex-col justify-center justify-self-stretch items-center text-center text-3xl md:text-3xl lg:text-4xl xl:text-6xl font-bold"
       >
-        <div class="uppercase font-display p-4 my-2 mx-4 lg:p-8 lg:mx-40 xl:p-24 xl:mx-56">
+        <div class="leading-none uppercase md:leading-tight lg:leading-snug  font-display p-4 my-2 mx-4 lg:p-8 lg:mx-40 xl:p-24 xl:mx-56">
           {{ quote }}
         </div>
 
