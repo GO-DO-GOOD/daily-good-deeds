@@ -1,6 +1,6 @@
 import { watch, computed } from 'vue'
 import { usePreferredDark } from '@vueuse/core'
-import { colorSchema } from '../store'
+import { colorSchema, local } from '../store'
 
 const preferredDark = usePreferredDark()
 
@@ -21,3 +21,12 @@ watch(
   v => document.documentElement.classList.toggle('dark', v),
   { immediate: true },
 )
+
+export const lang = computed({
+  get() {
+    return local.value
+  },
+  set(lang: 'de' | 'en') {
+    local.value = lang
+  },
+})

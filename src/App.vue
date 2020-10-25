@@ -6,6 +6,13 @@
           <img src="/logo-letter.png" class="h-56" />
         </div>
       </div>
+      <div class="flex justify-center">
+        <div class="p-4 m-2">
+          <button :class="{ 'font-bold': lang === 'de' }" @click="setLang('de')">DE</button>
+          |
+          <button :class="{ 'font-bold': lang === 'en' }" @click="setLang('en')">EN</button>
+        </div>
+      </div>
 
       <div
         class="flex flex-col justify-center justify-self-stretch items-center text-center text-2xl xl:text-6xl font-bold"
@@ -41,22 +48,35 @@
 
 <script lang="ts">
 import { ref } from 'vue'
-import quotes from '/lang/de.json'
+import { lang } from '/~/utils'
+import de from '/lang/de.json'
+import en from '/lang/en.json'
 
 export default {
   setup() {
     const background = ref<string>(`bg-circle-${Math.floor(Math.random() * 16) + 1}`)
-    const quote = ref<string>(quotes[Math.floor(Math.random() * quotes.length)])
+    const quote = ref<string>(lang.value === 'de' ? getQuote(de) : getQuote(en))
 
     function toggle() {
       background.value = `bg-circle-${Math.floor(Math.random() * 16) + 1}`
-      quote.value = quotes[Math.floor(Math.random() * quotes.length)]
+      quote.value = lang.value === 'de' ? getQuote(de) : getQuote(en)
+    }
+
+    function setLang(l: 'de' | 'en') {
+      lang.value = l
+      quote.value = l === 'de' ? getQuote(de) : getQuote(en)
+    }
+
+    function getQuote(quotes: Array<string>) {
+      return quotes[Math.floor(Math.random() * quotes.length)]
     }
 
     return {
       background,
       quote,
       toggle,
+      lang,
+      setLang,
     }
   },
 }
