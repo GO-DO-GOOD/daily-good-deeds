@@ -1,7 +1,7 @@
 {
     "name": "GO DO GOOD",
-    "display": "standalone",
-    "start_url": "/daily-good-deeds/",
+    "display": "fullscreen",
+    "start_url": "/",
     "short_name": "GODOGOOD",
     "theme_color": "#ffffff",
     "description": "YOUR DAILY GOOD DEED FOR THE GOOD CHALLENGE IN NOVEMBER 2020",
