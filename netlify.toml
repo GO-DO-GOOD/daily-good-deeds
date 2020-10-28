@@ -1,6 +1,6 @@
 [build]
   publish = ".presite"
-  command = "npx pnpm i --store=node_modules/.pnpm-store --frozen-lockfile=false && npm run build && npm run prerender"
+  command = "npx pnpm i && npx pnpm run build && npx pnpm run prerender"
 
 [[redirects]]
   from = "/*"
