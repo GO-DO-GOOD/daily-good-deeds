@@ -3,6 +3,7 @@ import { UserConfig } from 'vite'
 import Voie from 'vite-plugin-voie'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import ViteComponents from 'vite-plugin-components'
+import { VitePWA } from 'vite-plugin-pwa'
 
 const alias = {
   '/~/': path.resolve(__dirname, 'src'),
@@ -18,6 +19,28 @@ const config: UserConfig = {
       alias,
     }),
     PurgeIcons(),
+    VitePWA({
+      manifest: {
+        name: 'GO DO GOOD',
+        short_name: 'GODOGOOD',
+        lang: 'de',
+        icons: [
+          {
+            src: 'manifest-icon-192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'manifest-icon-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
+      workbox: {
+        // workbox options
+      },
+    }),
   ],
 }
 
