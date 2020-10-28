@@ -1,11 +1,11 @@
 <template>
   <div :class="background" class="min-h-screen w-full text-white">
     <div class="flex flex-col flex-initial">
-      <div class="flex justify-center">
+      <header class="flex justify-center">
         <div class="p-4 m-2">
-          <img src="/logo-letter.png" class="h-56" alt="GO DO GOOD Logo" />
+          <img src="/logo-letter.png" class="h-56" alt="GO DO GOOD Logo">
         </div>
-      </div>
+      </header>
       <div class="flex justify-center">
         <div class="p-2">
           <a rel="noopener" :class="{ 'font-bold': lang === 'de' }" @click="setLang('de')">DE</a>
