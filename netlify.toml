@@ -1,11 +1,8 @@
 [build]
-  publish = ".presite"
-  command = "npx pnpm i --frozen-lockfile=false && npx pnpm run build && npx pnpm run prerender"
+  publish = "dist"
+  command = "npx pnpm i --store=node_modules/.pnpm-store --frozen-lockfile=false && npx pnpm run build"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[[plugins]]
-  package = "netlify-plugin-chromium"
