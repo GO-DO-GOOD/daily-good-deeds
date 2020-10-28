@@ -1,6 +1,7 @@
 dependencies:
   '@iconify/iconify': 2.0.0-rc.1
   '@vueuse/core': 4.0.0-beta.30_vue@3.0.2
+  netlify-plugin-chromium: 1.1.4
   vue: 3.0.2
   vue-router: 4.0.0-rc.1_vue@3.0.2
 devDependencies:
@@ -3906,6 +3907,10 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
+  /netlify-plugin-chromium/1.1.4:
+    dev: false
+    resolution:
+      integrity: sha512-yLgw6YePOF38URWVsHg3nBBoVSKcbMabKxziJX5i01/weyXWtFQVFvDWSOhyWkQgoMJ6zwF2UznA0Icy+m4pow==
   /node-emoji/1.10.0:
     dependencies:
       lodash.toarray: 4.4.0
@@ -5739,6 +5744,7 @@ specifiers:
   '@vueuse/core': ^4.0.0-beta.30
   cross-env: ^7.0.2
   eslint: ^7.12.1
+  netlify-plugin-chromium: ^1.1.4
   tailwindcss: ^1.9.6
   typescript: ^4.0.5
   vite: ^1.0.0-rc.8
