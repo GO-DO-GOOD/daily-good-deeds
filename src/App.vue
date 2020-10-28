@@ -36,10 +36,10 @@
           <span class="text-2xl tracking-widest font-serif">{{ suffix }}</span>
         </div>
         <div class="flex flex-row text-3xl my-4">
-          <a href="https://www.facebook.com/GoDoGood2020/" target="_blank">
+          <a href="https://www.facebook.com/GoDoGood2020/" rel="noreferrer" target="_blank">
             <Icon class="m-4" icon="cib:facebook" />
           </a>
-          <a href="https://www.instagram.com/godogood2020/" target="_blank">
+          <a href="https://www.instagram.com/godogood2020/" rel="noreferrer" target="_blank">
             <Icon class="m-4" icon="entypo-social:instagram-with-circle" />
           </a>
           <a href="mailto:godo.good?subject=Hab%20eine%20Idee">
