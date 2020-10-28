@@ -1,6 +1,6 @@
 [build]
   publish = ".presite"
-  command = "npx pnpm i && npx pnpm run build && npx pnpm run prerender"
+  command = "npx pnpm i --frozen-lockfile=false && npx pnpm run build && npx pnpm run prerender"
 
 [[redirects]]
   from = "/*"
