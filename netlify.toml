@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "npx pnpm i --store=node_modules/.pnpm-store && npm run build"
+  command = "npx pnpm i --store=node_modules/.pnpm-store --frozen-lockfile=false && npm run build"
 
 [[redirects]]
   from = "/*"
@@ -8,4 +8,4 @@
   status = 200
 
 [[plugins]]
-package = "netlify-plugin-chromium"
+  package = "netlify-plugin-chromium"
