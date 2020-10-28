@@ -42,8 +42,8 @@
           <a href="https://www.instagram.com/godogood2020/" rel="noreferrer" target="_blank">
             <Icon class="m-4" icon="entypo-social:instagram-with-circle" />
           </a>
-          <a href="mailto:godo.good?subject=Hab%20eine%20Idee">
-            <Icon class="m-4" icon="icomoon-free:mail4" />
+          <a title="E-Mail" href="mailto:godo.good?subject=Hab%20eine%20Idee">
+            <Icon alt="E-Mail" class="m-4" icon="icomoon-free:mail4" />
           </a>
         </div>
       </footer>
