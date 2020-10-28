@@ -22,7 +22,6 @@
     "@vuedx/typescript-plugin-vue": "^0.2.3",
     "cross-env": "^7.0.2",
     "eslint": "^7.12.1",
-    "presite": "^2.0.1",
     "tailwindcss": "^1.9.6",
     "typescript": "^4.0.5",
     "vite": "^1.0.0-rc.8",
