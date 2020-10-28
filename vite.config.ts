@@ -23,6 +23,7 @@ const config: UserConfig = {
       manifest: {
         name: 'GO DO GOOD',
         short_name: 'GODOGOOD',
+        background_color: '#ffffff',
         lang: 'de',
         icons: [
           {
