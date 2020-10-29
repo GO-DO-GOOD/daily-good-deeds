@@ -36,6 +36,7 @@ module.exports = {
         'bg-circle-22',
         'bg-circle-23',
         'bg-circle-24',
+        'bg-circle-25',
       ],
     },
   },
@@ -75,6 +76,7 @@ module.exports = {
           22: '#bf3636',
           23: '#c66729',
           24: '#e24966',
+          25: '#bd3371',
         },
       },
       opacity: {
