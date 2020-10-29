@@ -17,11 +17,10 @@
       <div
         class="flex flex-col justify-center justify-self-stretch items-center text-center text-3xl md:text-3xl lg:text-4xl xl:text-6xl font-bold"
       >
-        <div 
-          v-html="quote" 
-          style="hyphens:manual;" 
-          class="leading-tight uppercase md:leading-tight lg:leading-snug  font-display p-4 my-2 mx-4 lg:p-8 lg:mx-40 xl:p-24 xl:mx-56">
-        </div>
+        <div
+          v-html="quote"
+          style="hyphens:manual;"
+          class="leading-tight uppercase md:leading-tight lg:leading-snug  font-display p-4 my-2 mx-4 lg:p-8 lg:mx-40 xl:p-24 xl:mx-56"/>
 
         <div class="mt-4 pb-16 mb-16">
           <a class="text-base font-normal xl:text-xl text-white py-2 px-4 rounded-full border border-white hover:border-transparent" @click="toggle()">
