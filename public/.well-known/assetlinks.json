@@ -1,0 +1,9 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "online.godogood.gooddeeds",
+      "sha256_cert_fingerprints":
+      ["F8:CF:42:D3:FD:03:AC:EC:F9:06:3C:AC:4A:D2:4B:07:E8:A2:94:67:A4:5B:08:C0:00:4F:0F:F2:DA:66:77:07"]
+    }
+  }]
