@@ -59,14 +59,14 @@ import en from '/lang/en.json'
 
 export default {
   setup() {
-    const background = ref<string>(`bg-circle-${Math.floor(Math.random() * 16) + 1}`)
+    const background = ref<string>(`bg-circle-${Math.floor(Math.random() * 24) + 1}`)
     const quote = ref<string>(lang.value === 'de' ? getQuote(de) : getQuote(en))
     const more = ref<string>(lang.value === 'de' ? 'NOCH EINE, BITTE!' : 'ONE MORE PLEASE!')
     const slogan = ref<string>(lang.value === 'de' ? 'DEINE TÄGLICHE GUTE TAT FÜR THE GOOD CHALLENGE IM NOVEMBER 2020' : 'YOUR DAILY GOOD DEED FOR THE GOOD CHALLENGE IN NOVEMBER 2020')
     const suffix = ref<string>(lang.value === 'de' ? 'Mach mit und lass Dich inspirieren!' : 'Join now and get inspired!')
 
     function toggle() {
-      background.value = `bg-circle-${Math.floor(Math.random() * 16) + 1}`
+      background.value = `bg-circle-${Math.floor(Math.random() * 24) + 1}`
       quote.value = lang.value === 'de' ? getQuote(de) : getQuote(en)
     }
 
