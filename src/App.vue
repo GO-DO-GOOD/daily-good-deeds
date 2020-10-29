@@ -17,7 +17,7 @@
       <div
         class="flex flex-col justify-center justify-self-stretch items-center text-center text-3xl md:text-3xl lg:text-4xl xl:text-6xl font-bold"
       >
-        <div class="leading-none uppercase md:leading-tight lg:leading-snug  font-display p-4 my-2 mx-4 lg:p-8 lg:mx-40 xl:p-24 xl:mx-56">
+        <div style="hyphens:auto;" class="leading-tight uppercase md:leading-tight lg:leading-snug  font-display p-4 my-2 mx-4 lg:p-8 lg:mx-40 xl:p-24 xl:mx-56">
           {{ quote }}
         </div>
 
@@ -42,7 +42,7 @@
           <a title="Instagram" href="https://www.instagram.com/godogood2020/" rel="noreferrer" target="_blank">
             <Icon class="m-4" icon="entypo-social:instagram-with-circle" />
           </a>
-          <a title="E-Mail" href="mailto:godo.good?subject=Hab%20eine%20Idee">
+          <a title="E-Mail" href="mailto:godogood2020@gmail.com">
             <Icon class="m-4" icon="icomoon-free:mail4" />
           </a>
         </div>
