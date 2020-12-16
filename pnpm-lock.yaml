@@ -17,7 +17,7 @@ devDependencies:
   vite: 1.0.0-rc.8
   vite-plugin-components: 0.2.14
   vite-plugin-purge-icons: 0.4.4
-  vite-plugin-pwa: 0.1.3
+  vite-plugin-pwa: 0.1.7
   vite-plugin-voie: 0.4.0_c84bdc0603573c924810a81fe0ed9090
   voie-pages: 0.4.0_vue@3.0.2
 lockfileVersion: 5.2
@@ -1642,7 +1642,7 @@ packages:
   /@vueuse/core/4.0.0-beta.30_vue@3.0.2:
     dependencies:
       '@vueuse/shared': 4.0.0-beta.30_vue@3.0.2
-      vue-demi: 0.4.1_vue@3.0.2
+      vue-demi: 0.5.0_vue@3.0.2
     dev: false
     peerDependencies:
       vue: '*'
@@ -1650,7 +1650,7 @@ packages:
       integrity: sha512-RNdxUm/++eHEsDH3BJJfTqA07y6kralyLYXKwoOHWUd37z2fHgIs8mMamNpfrRLqQVdOqiPfdRNrDn8Cuw+OgQ==
   /@vueuse/shared/4.0.0-beta.30_vue@3.0.2:
     dependencies:
-      vue-demi: 0.4.1_vue@3.0.2
+      vue-demi: 0.5.0_vue@3.0.2
     dev: false
     peerDependencies:
       vue: '*'
@@ -5345,14 +5345,14 @@ packages:
       node: '>= 12'
     resolution:
       integrity: sha512-T4btagiqi90FchfcVwKFASgK6Dj3QotEL8eZBNOE6YcxQVPWbkZ8I3UgbNbkiGy43pmsvlLkXOAEgEPiSe/q2w==
-  /vite-plugin-pwa/0.1.3:
+  /vite-plugin-pwa/0.1.7:
     dependencies:
       debug: 4.3.0
       fast-glob: 3.2.4
       rollup-plugin-workbox: 5.2.1
     dev: true
     resolution:
-      integrity: sha512-WZ1zMQyXpZVprX69zD8KFYb0mcVKtacktXYfSNVPQl3mG1Ucsm6tl398eIZOshVEzhlRvUDH8xcLAB26+2sDeg==
+      integrity: sha512-S5Hc1x/rcfb6cgKjlW7yxSTv1er6fquzGZt/+xC1wavSBa7Qf6wdf6QzYiYdwmUom5yUSDEawc2gEYgq5SsZFg==
   /vite-plugin-voie/0.4.0_c84bdc0603573c924810a81fe0ed9090:
     dependencies:
       fast-glob: 3.2.4
@@ -5441,17 +5441,16 @@ packages:
     dev: true
     resolution:
       integrity: sha512-8TEXQxlldWAuIODdukIb+TR5s+9Ds40eSJrw+1iDDA9IFORPjMELarNQE3myz5XIkWWpdprmJjm1/SxMlWOC8A==
-  /vue-demi/0.4.1_vue@3.0.2:
+  /vue-demi/0.5.0_vue@3.0.2:
     dependencies:
       vue: 3.0.2
     dev: false
     hasBin: true
     peerDependencies:
-      '@vue/composition-api': '>=1.0.0-beta.1'
       vue: ^2.6.0 || >=3.0.0-rc.1
     requiresBuild: true
     resolution:
-      integrity: sha512-3xxnqY426eMKhmYdNygYwOvuaJlrgP+aSZLiD5GdCF7cBsMNmUZM7g3RL0NqIuY19WB5CCzuFbi/xW1Nd053xw==
+      integrity: sha512-NIR8aKBz3ixC/2BhQJmpm8eGJ2mCACNah4ycb953HqGmz+zIl1F9mZIpl1yV6MIC0VIMNxhdFxBbrxM1wFq0oQ==
   /vue-eslint-parser/7.1.1_eslint@7.12.1:
     dependencies:
       debug: 4.2.0
@@ -5744,7 +5743,7 @@ specifiers:
   vite: ^1.0.0-rc.8
   vite-plugin-components: ^0.2.14
   vite-plugin-purge-icons: ^0.4.4
-  vite-plugin-pwa: ^0.1.3
+  vite-plugin-pwa: ^0.1.7
   vite-plugin-voie: ^0.4.0
   voie-pages: ^0.4.0
   vue: ^3.0.2
