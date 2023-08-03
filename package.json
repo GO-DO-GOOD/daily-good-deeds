@@ -23,7 +23,7 @@
     "eslint": "^7.12.1",
     "tailwindcss": "^1.9.6",
     "typescript": "^4.0.5",
-    "vite": "^1.0.0-rc.8",
+    "vite": "^2.9.16",
     "vite-plugin-components": "^0.2.14",
     "vite-plugin-purge-icons": "^0.4.4",
     "vite-plugin-pwa": "^0.1.7",
